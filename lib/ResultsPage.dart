@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:meditation_app/constants.dart';
 import 'package:meditation_app/ReusableCard.dart';
 import 'package:meditation_app/BottomBotton.dart';
-import 'package:meditation_app/weight_loss_diet.dart';
+
+import 'package:meditation_app/screen1.dart';
 
 class ResultsPage extends StatelessWidget {
   ResultsPage(
@@ -61,8 +62,16 @@ class ResultsPage extends StatelessWidget {
                     style: kBodyTextStyle,
                   ),
 
-                    
-
+                        RaisedButton(
+                          color: Color(0xFF1D1E33),
+                          onPressed:(){
+                            Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) {
+                            return screen1();
+                          }),
+                        );},
+                        ),
 
 
                 ],
