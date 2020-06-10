@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meditation_app/constants.dart';
 import 'package:meditation_app/ReusableCard.dart';
 import 'package:meditation_app/BottomBotton.dart';
+import 'package:meditation_app/weight_loss_diet.dart';
 
 class ResultsPage extends StatelessWidget {
   ResultsPage(
@@ -38,22 +39,32 @@ class ResultsPage extends StatelessWidget {
             child: ReusableCard(
               colour: kActiveCardColour,
               cardChild: Column(
+
+
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+
                   Text(
                     resultText.toUpperCase(),
                     style: kResultTextStyle,
                   ),
                   Text(
-                    bmiResult,
+                     bmiResult,
                     style: kBMITextStyle,
+
                   ),
+
                   Text(
                     interpretation,
                     textAlign: TextAlign.center,
                     style: kBodyTextStyle,
                   ),
+
+                    
+
+
+
                 ],
               ),
             ),
